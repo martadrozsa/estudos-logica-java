@@ -9,8 +9,10 @@ import java.util.List;
 public class IgnoreIndexIOfArray {
     public static void main(String[] args) {
 
-        //Integer[] numbers = {3, 4, 5};
-        Integer[] numbers = {3, 2, 1};
+        Integer[] numbers = {3, 4, 5};
+        //Integer[] numbers = {3, 2, 1};
+        //Integer[] numbers = {1, 2, 3, 4, 5};
+
         List<Integer> numbersResult = new ArrayList<>();
 
         for (int i = 0; i < numbers.length; i++) {
@@ -21,7 +23,6 @@ public class IgnoreIndexIOfArray {
             result =  result / numbers[i];
             numbersResult.add(result);
         }
-
         System.out.println(numbersResult);
     }
 }
