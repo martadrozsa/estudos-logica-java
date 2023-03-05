@@ -28,3 +28,8 @@ The most we can collect is: 0 + 2 + 1 + 5 + 3 + 1 = 12 coins
 ![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/83780126/212559392-7a7bc2eb-ad03-443e-a278-d6c816d3472d.png)
 
 __________
+
+### Exercise 4
+Given an array of integers where every integer occurs three times except for one integer, which only occurs once, find and return the non-duplicated integer.
+For example, given [6, 1, 3, 3, 3, 6, 6], return 1. Given [13, 19, 13, 13], return 19.
+Do this in O(n) time and O(1) space.
