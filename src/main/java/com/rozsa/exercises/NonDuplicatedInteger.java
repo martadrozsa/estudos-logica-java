@@ -7,11 +7,11 @@ Do this in O(n) time and O(1) space.
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 public class NonDuplicatedInteger {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>();
+        List<Integer> numbers = new ArrayList<>();
         numbers.add(6);
         numbers.add(1);
         numbers.add(3);
@@ -24,7 +24,7 @@ public class NonDuplicatedInteger {
         System.out.println("The number is: "+ nonDuplicated);
     }
 
-    public Integer getNonDuplicatedInteger(ArrayList<Integer> numbers) {
+    public Integer getNonDuplicatedInteger(List<Integer> numbers) {
         HashMap<Integer, Integer> num = new HashMap<>();
 
         for (int currentNumber : numbers) {

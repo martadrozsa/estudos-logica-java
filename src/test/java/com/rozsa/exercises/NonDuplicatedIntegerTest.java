@@ -1,32 +1,27 @@
 package com.rozsa.exercises;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.List;
 
 public class NonDuplicatedIntegerTest {
 
-    private NonDuplicatedInteger nonDuplicatedInteger = new NonDuplicatedInteger();
+    private final NonDuplicatedInteger nonDuplicatedInteger = new NonDuplicatedInteger();
 
     @Test
-    public void getNonDuplicatedIntegerOneDuplicated() {
-        //inicialização/preparação
-        ArrayList<Integer> numbers = new ArrayList<>();
-        numbers.add(6);
-        numbers.add(1);
-        numbers.add(3);
-        numbers.add(3);
-        numbers.add(3);
-        numbers.add(6);
-        numbers.add(6);
-
-        //execução
+    void getNonDuplicatedIntegerShouldReturnOne() {
+        List<Integer> numbers = List.of(6, 1, 3, 3, 3, 6, 6);
         Integer result = nonDuplicatedInteger.getNonDuplicatedInteger(numbers);
 
-        //asserção
         assertEquals(1, result);
+    }
+
+    @Test
+    void getNonDuplicatedIntegerShouldReturnNineteen() {
+        List<Integer> numbers = List.of(13, 19, 13, 13);
+        Integer result = nonDuplicatedInteger.getNonDuplicatedInteger(numbers);
+
+        assertEquals(19, result);
     }
 }
