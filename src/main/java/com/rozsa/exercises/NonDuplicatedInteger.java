@@ -11,24 +11,20 @@ import java.util.Map;
 
 public class NonDuplicatedInteger {
     public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(6);
+        numbers.add(1);
+        numbers.add(3);
+        numbers.add(3);
+        numbers.add(3);
+        numbers.add(6);
+        numbers.add(6);
 
-        System.out.println(getNonDuplicatedInteger());
+        Integer nonDuplicated = new NonDuplicatedInteger().getNonDuplicatedInteger(numbers);
+        System.out.println("The number is: "+ nonDuplicated);
     }
 
-    private static Integer getNonDuplicatedInteger() {
-        ArrayList<Integer> numbers = new ArrayList<>();
-//        numbers.add(6);
-//        numbers.add(1);
-//        numbers.add(3);
-//        numbers.add(3);
-//        numbers.add(3);
-//        numbers.add(6);
-//        numbers.add(6);
-        numbers.add(13);
-        numbers.add(13);
-        numbers.add(19);
-        numbers.add(13);
-
+    public Integer getNonDuplicatedInteger(ArrayList<Integer> numbers) {
         HashMap<Integer, Integer> num = new HashMap<>();
 
         for (int currentNumber : numbers) {
